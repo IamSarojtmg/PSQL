@@ -7,7 +7,9 @@ const port = 3000
 
 app.use(express.json())
 
-
+app.get('/',(req, res)=>{
+res.send('Welcome to my APi')
+})
 
 app.use('/api/v1/students', studentRoutes)
 
