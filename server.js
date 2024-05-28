@@ -7,12 +7,12 @@ const port = 3000
 
 app.use(express.json())
 
-app.get('/',(req, res)=>{
-res.send('Hello kitty')
-})
+
 
 app.use('/api/v1/students', studentRoutes)
 
 app.listen(port, ()=>{
     console.log(`listening on ${port}`);
 })
+
+module.exports = app
