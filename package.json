@@ -5,8 +5,7 @@
   "main": "listen.js",
   "scripts": {
     "start": "node listen.js",
-    "seed-prod": "cross-env NODE_ENV=production npm run seed",
-    "vercel-build": "echo hello"
+    "seed-prod": "SET NODE_ENV=production & npm run seed"
   },
   "keywords": [],
   "author": "",
