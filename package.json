@@ -5,6 +5,7 @@
   "main": "listen.js",
   "scripts": {
     "start": "node listen.js",
+    "setup-db": "psql -U postgres -f ./db/student.sql",
     "seed-prod": "SET NODE_ENV=production & npm run seed"
   },
   "keywords": [],
